@@ -1,0 +1,61 @@
+<div class="flower">✿ &nbsp; ❀ &nbsp; ✿</div>
+</header>
+
+<section class="intro">
+  Có những điều bình thường đôi khi lại trở thành
+  kỷ niệm đáng nhớ nhất. Nhân ngày 20/10, chúc các bạn nữ
+  <strong>luôn vui vẻ, tự tin, gặp nhiều may mắn</strong>
+  và luôn giữ được nét riêng của mình.
+  Cảm ơn vì đã là một phần của tập thể A10 K63!
+</section>
+
+<main class="gallery" id="gallery"></main>
+
+<section class="note">
+  <div class="flower">❀</div>
+  <h2>Gửi một lời chúc nhỏ</h2>
+  Mong rằng tuổi học trò của chúng ta sẽ luôn có
+  thật nhiều tiếng cười, những người bạn tốt và
+  những khoảnh khắc mà sau này nhớ lại vẫn thấy vui.
+  <br><strong>Chúc mừng ngày Phụ nữ Việt Nam 20/10!</strong>
+  <div class="flower">✿</div>
+</section>
+
+<footer>
+  Made with care · A10 K63<br>
+  Dành tặng tất cả những cô gái tuyệt vời của lớp.
+</footer>
+
+<script>
+const gallery = document.getElementById("gallery");
+
+for (let i = 1; i <= 33; i++) {
+  const number = String(i).padStart(2, "0");
+  const card = document.createElement("article");
+  card.className = "card";
+
+  const photo = document.createElement("img");
+  photo.className = "photo";
+  photo.src = `images/${number}.jpg`;
+  photo.alt = `Ảnh kỷ niệm bạn nữ số ${i}`;
+  photo.loading = "lazy";
+
+  photo.onerror = function () {
+    this.onerror = null;
+    this.src = "https://placehold.co/600x800/f0e7dc/786b5d?text=Photo+" + number;
+  };
+
+  const name = document.createElement("div");
+  name.className = "name";
+  name.textContent = `Một bông hoa`;
+
+  const label = document.createElement("div");
+  label.className = "number";
+  label.textContent = `A10 K63 · ${number}`;
+
+  card.append(photo, name, label);
+  gallery.appendChild(card);
+}
+</script>
+</body>
+</html>
