@@ -1,30 +1,178 @@
-<div class="flower">✿ &nbsp; ❀ &nbsp; ✿</div>
-</header>
-
-<section class="intro">
-  Có những điều bình thường đôi khi lại trở thành
-  kỷ niệm đáng nhớ nhất. Nhân ngày 20/10, chúc các bạn nữ
-  <strong>luôn vui vẻ, tự tin, gặp nhiều may mắn</strong>
-  và luôn giữ được nét riêng của mình.
-  Cảm ơn vì đã là một phần của tập thể A10 K63!
-</section>
-
-<main class="gallery" id="gallery"></main>
-
-<section class="note">
-  <div class="flower">❀</div>
-  <h2>Gửi một lời chúc nhỏ</h2>
-  Mong rằng tuổi học trò của chúng ta sẽ luôn có
-  thật nhiều tiếng cười, những người bạn tốt và
-  những khoảnh khắc mà sau này nhớ lại vẫn thấy vui.
-  <br><strong>Chúc mừng ngày Phụ nữ Việt Nam 20/10!</strong>
-  <div class="flower">✿</div>
-</section>
-
-<footer>
-  Made with care · A10 K63<br>
-  Dành tặng tất cả những cô gái tuyệt vời của lớp.
-</footer>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>20/10 | A10 K63</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 32px 18px;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #51443e;
+      background: #f5f0e8;
+    }
+    .page {
+      max-width: 1100px;
+      margin: auto;
+      padding: 34px;
+      background: #fffdf8;
+      border: 1px solid #dfcfc1;
+      outline: 5px solid #eee3d8;
+      border-radius: 8px;
+      box-shadow: 0 12px 35px #78625218;
+    }
+    header {
+      text-align: center;
+      padding: 24px 12px 32px;
+      border-bottom: 1px solid #e6d5c8;
+    }
+    .eyebrow {
+      color: #a77770;
+      letter-spacing: 4px;
+      font: 12px Arial, sans-serif;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 16px 0 10px;
+      font-size: clamp (38px, 7vw, 68px);
+      font-weight: normal;
+      color: #a66f69;
+    }
+    .subtitle {
+      font: 15 px/1.8 Arial, sans-serif;
+      color: #817168;
+    }
+    .decoration {
+      margin: 18 px 0 0;
+      color: #b88c80;
+      letter-spacing: 12px;
+      font-size: 20px;
+    }
+    .message {
+      max-width: 720 px;
+      margin: 30px auto 36px;
+      padding: 2px;
+      text-align: center;
+      background: #f7eee8;
+      border: 1px solid #e4cfc4;
+      border-radius: 6px;
+      position: relative;
+    }
+    .message h2 {
+      margin: 0 0 12px;
+      color: #9d6c65;
+      font-size: 2px;
+      font-weight: normal;
+    }
+    .message p {
+      margin: 0;
+      font: 14px/1.9 Arial, sans-serif;
+      color: #6f5d54;
+    }
+    .section-title {
+      margin: 36px 0 22px;
+      text-align: center;
+      color: #9d6c65;
+      font-size: 25px;
+      font-weight: normal;
+    }
+    #gallery {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+    .card {
+      min-width: 0;
+      padding: 10px 10px 15px;
+      background: #fff;
+      border: 1px solid #e5d8ce;
+      border-radius: 5px;
+      box-shadow: 0 4px 13px #69534412;
+      text-align: center;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .card:hover {
+      transform: translateY (-4px);
+      box-shadow: 0 8px 20px #69534420;
+    }
+    .photo {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      background: #eee5dc;
+      border-radius: 3px;
+    }
+    .name {
+      margin-top: 12px;
+      color: #9b6d66;
+      font-size: 17px;
+    }
+    .number {
+      margin-top: 5px;
+      color: #a99a8f;
+      font: 10px Arial, sans-serif;
+      letter-spacing: 2px;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid #e6d5c8;
+      text-align: center;
+      color: #817168;
+      font: 13px/1.9 Arial, sans-serif;
+    }
+    @ media (max-width: 700px) {
+      body {
+        padding: 16px 10px;
+      }
+      .page {
+        padding: 20px 12px;
+      }
+      #gallery {
+        grid-template-columns: repeat (2, minmax(0, 1fr));
+        gap: 12px;
+      }
+      .message {
+        padding: 18px 14px;
+      }
+    }
+   @ media (max-width: 360px) {
+      #gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div class="eyebrow">A10 K63 · Một ngày đặc biệt</div>
+      <h1>Happy Women's Day</h1>
+      <div class="subtitle">
+        20 tháng 10 · Gửi những lời chúc tốt đẹp nhất đến các bạn nữ
+      </div>
+      <div class="decoration">✿　✧　❀　✧　✿</div>
+    </header>
+    <section class="message">
+      <h2>Gửi những bông hoa của A10 K63</h2>
+      <p>
+        Chúc các bạn luôn vui vẻ, tự tin và giữ được nét riêng của mình.
+        Chúc các bạn luôn luôn xinh đẹp, tự tin và đạt được ước mơ của mình.
+        <br>
+        <strong>Chúc mừng ngày 20/10!</strong>
+      </p>
+    </section>
+    <h2 class="section-title">Những gương mặt đáng nhớ</h2>
+    <section id="gallery"></section>
+    <footer>
+      Made with care · A10 K63<br>
+      Dành tặng tất cả những cô gái tuyệt vời của lớp.
+    </footer>
 
 <script>
 const gallery = document.getElementById("gallery");
