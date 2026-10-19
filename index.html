@@ -225,9 +225,13 @@
             photo.loading = "lazy";
 
             const name = document.createElement("div");
-            name.className = "name";
-            name.textContent = "Một bông hoa";
+name.className = "name";
 
+if (i + 1 === 26) {
+  name.textContent = "Ba bông hoa";
+} else {
+  name.textContent = "Một bông hoa";
+}
             const label = document.createElement("div");
             label.className = "number";
             label.textContent = `A10 K63 · ${String(i + 1).padStart(2, "0")}`;
